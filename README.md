@@ -1,7 +1,7 @@
-# NetSIG Presentation - [Presentation Title]
+# NetSIG Presentation - Host Defenses: An Intro to Firewalls & IpTables
 
-[![Actions Status](https://github.com/netserf/template-presentation-repo/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/template-presentation-repo/actions)
-[![Actions Status](https://github.com/netserf/template-presentation-repo/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/template-presentation-repo/actions)
+[![Actions Status](https://github.com/netserf/netsig-presentation-host-defenses/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/netsig-presentation-host-defenses/actions)
+[![Actions Status](https://github.com/netserf/netsig-presentation-host-defenses/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/netsig-presentation-host-defenses/actions)
 
 ## Presentation Summary
 
@@ -10,7 +10,7 @@ Topics will include ...
 
 ## Presentation Slides
 
-* [Presentation Title](dummy-slides.txt)
+* [Host Defenses](netsig-presentation-host-defenses.pdf)
 
 ## Who is NetSIG?
 
