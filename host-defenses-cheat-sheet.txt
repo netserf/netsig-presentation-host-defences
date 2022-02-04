@@ -1,0 +1,66 @@
+# Cheat Sheet for NetSIG presentation - Host Defenses
+# For more details:
+# https://github.com/netserf/netsig-presentation-host-defenses
+
+# iptables installation for CentOS 7
+sudo yum install iptables nmap
+
+# iptables installation for Ubuntu 18.04
+sudo apt install iptables nmap
+
+# check your iptables "chains" - INPUT, OUTPUT, FORWARD
+sudo iptables -L
+sudo ip6tables -L
+
+# backups iptables configuration
+sudo iptables-save > $HOME/iptables.conf
+sudo ip6tables-save > $HOME/ip6tables.conf
+
+# restore iptables configuration
+sudo iptables-restore $HOME/iptables.conf
+sudo ip6tables-restore $HOME/ip6tables.conf
+
+# flush the rules
+sudo iptables --flush
+sudo ip6tables --flush
+
+
+# exercise - scan your partner
+
+# on the firewall, setup a dummy webserver:
+sudo ncat -v -l -p 80 -k
+
+# on the nmap host try to scan the firewall host:
+nmap -T5 -F [firewall’s IPv4]
+nmap -T5 -F -6 [firewall’s IPv6]
+
+# exercise - block the scans
+# ==========================
+# on the firewall:
+sudo iptables -A INPUT -m conntrack --ctstate \ ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -j REJECT
+sudo iptables -L
+
+# on the nmap host try to scan the firewall host:
+nmap -T5 -F [firewall’s IPv4]
+nmap -T5 -F -6 [firewall’s IPv6]
+
+# exercise - allow ICMP
+# =====================
+# on the firewall:
+sudo iptables -I INPUT 1 -p icmp -j ACCEPT
+sudo iptables -L --line-numbers
+
+# on the nmap host try to ping the firewall host (before & after):
+ping [partner’s IPv4]
+
+# exercise - allow HTTP
+# =====================
+# on the firewall:
+sudo iptables -I INPUT 3 -p tcp --dport 80 -m state --state NEW -j ACCEPT
+sudo iptables -L --line-numbers
+
+# on the nmap host try another scan (before & after):
+nmap -T5 -F [partner’s IPv4]
+
+

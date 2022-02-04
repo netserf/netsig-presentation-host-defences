@@ -5,8 +5,9 @@
 
 ## Presentation Summary
 
-In this session we'll look at ...
-Topics will include ...
+In this session we'll look at a brief history of firewalls and we'll go through
+some exercises to show how you can configure iptables to improve your host
+defenses.
 
 ## Presentation Slides
 
@@ -26,7 +27,7 @@ These presentations are currently hosted online.
 
 ## Where can I find the cheatsheet for this presentation?
 
-* [Template Cheat Sheet](template-cheat-sheet.txt)
+* [Host Defenses Cheat Sheet](host-defenses-cheat-sheet.txt)
 
 ## Contributing
 
