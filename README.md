@@ -7,7 +7,7 @@
 
 In this session we'll look at a brief history of firewalls and we'll go through
 some exercises to show how you can configure iptables to improve your host
-defenses. 
+defenses.
 
 ## Presentation Slides
 
