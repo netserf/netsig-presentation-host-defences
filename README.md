@@ -1,17 +1,17 @@
 # NetSIG Presentation - Host Defenses: An Intro to Firewalls & IpTables
 
-[![Actions Status](https://github.com/netserf/netsig-presentation-host-defenses/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/netsig-presentation-host-defenses/actions)
-[![Actions Status](https://github.com/netserf/netsig-presentation-host-defenses/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/netsig-presentation-host-defenses/actions)
+[![Actions Status](https://github.com/netserf/netsig-presentation-host-defences/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/netsig-presentation-host-defences/actions)
+[![Actions Status](https://github.com/netserf/netsig-presentation-host-defences/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/netsig-presentation-host-defences/actions)
 
 ## Presentation Summary
 
 In this session we'll look at a brief history of firewalls and we'll go through
 some exercises to show how you can configure iptables to improve your host
-defenses.
+defences.
 
 ## Presentation Slides
 
-* [Host Defenses](netsig-presentation-host-defenses.pdf)
+* [Host Defences](netsig-presentation-host-defences.pdf)
 
 ## Who is NetSIG?
 
@@ -27,7 +27,7 @@ These presentations are currently hosted online.
 
 ## Where can I find the cheatsheet for this presentation?
 
-* [Host Defenses Cheat Sheet](host-defenses-cheat-sheet.txt)
+* [Host Defences Cheat Sheet](host-defences-cheat-sheet.txt)
 
 ## Contributing
 
